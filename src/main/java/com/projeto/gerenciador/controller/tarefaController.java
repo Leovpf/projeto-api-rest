@@ -23,21 +23,18 @@ public class tarefaController {
     @Autowired
     private tarefaService tarefaService;
 
-    // Endpoint para criar uma nova tarefa
     @PostMapping
     public ResponseEntity<tarefa> criarTarefa(@RequestBody tarefa tarefa) {
         tarefa novaTarefa = tarefaService.criarTarefa(tarefa);
         return ResponseEntity.ok(novaTarefa);
     }
 
-    // Endpoint para listar todas as tarefas
     @GetMapping
     public ResponseEntity<List<tarefa>> listarTarefas() {
         List<tarefa> tarefas = tarefaService.listarTarefas();
         return ResponseEntity.ok(tarefas);
     }
 
-    // Endpoint para buscar uma tarefa por ID
     @GetMapping("/{id}")
     public ResponseEntity<tarefa> buscarTarefaPorId(@PathVariable Long id) {
         return tarefaService.buscarTarefaPorId(id)
@@ -45,7 +42,6 @@ public class tarefaController {
             .orElse(ResponseEntity.notFound().build());
     }
 
-    // Endpoint para atualizar uma tarefa
     @PutMapping("/{id}")
     public ResponseEntity<tarefa> atualizarTarefa(@PathVariable Long id, @RequestBody tarefa tarefaDetalhada) {
         return tarefaService.buscarTarefaPorId(id)
@@ -60,7 +56,6 @@ public class tarefaController {
             .orElse(ResponseEntity.notFound().build());
     }
 
-    // Endpoint para deletar uma tarefa
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deletarTarefa(@PathVariable Long id) {
         return tarefaService.buscarTarefaPorId(id)

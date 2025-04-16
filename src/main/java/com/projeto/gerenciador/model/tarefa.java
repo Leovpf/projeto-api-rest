@@ -34,11 +34,9 @@ public class tarefa {
 
     private LocalDateTime dataAtualizacao;
 
-    // Construtor padrão
     public tarefa() {
     }
 
-    // Construtor com parâmetros
     public tarefa(String nome, String descricao, String status, String observacoes, 
                   LocalDateTime dataCriacao, LocalDateTime dataAtualizacao) {
         this.nome = nome;
@@ -49,7 +47,6 @@ public class tarefa {
         this.dataAtualizacao = dataAtualizacao;
     }
 
-    // Getters e Setters
     public Long getId() {
         return id;
     }
@@ -106,7 +103,6 @@ public class tarefa {
         this.dataAtualizacao = dataAtualizacao;
     }
 
-    // Atualização automática das datas
     @PrePersist
     protected void onCreate() {
         dataCriacao = LocalDateTime.now();
