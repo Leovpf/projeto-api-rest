@@ -96,3 +96,27 @@ Todos os testes foram executados com sucesso utilizando **JUnit**.
    ```bash
    mvn spring-boot:run
    ```
+
+## 🗃️ Banco de Dados
+
+### 📌 Nome do banco:
+![image](https://github.com/user-attachments/assets/d4368550-072a-48fa-ab3d-7fd7fd6f8c55)
+
+---
+
+### 📁 Estrutura do banco de dados
+
+Abaixo, a estrutura visual do banco de dados com suas respectivas tabelas e colunas:
+
+📷 *![image](https://github.com/user-attachments/assets/c88eacdb-b1b6-483f-9001-9813110adcfc)
+> **Imagem com estrutura geral do banco (tabelas e colunas)**
+
+---
+
+### 🔍 Exemplo de SELECT com resultado:
+
+Comando utilizado:
+```sql
+SELECT * FROM TAREFAS;
+![image](https://github.com/user-attachments/assets/18d508c2-a762-4ecd-b97a-589edd083c42)
+
