@@ -118,5 +118,6 @@ Abaixo, a estrutura visual do banco de dados com suas respectivas tabelas e colu
 Comando utilizado:
 ```sql
 SELECT * FROM TAREFAS;
-![image](https://github.com/user-attachments/assets/18d508c2-a762-4ecd-b97a-589edd083c42)
+![image](https://github.com/user-attachments/assets/f70a1a0c-6057-4212-8224-dcf0650ccb59)
+
 
